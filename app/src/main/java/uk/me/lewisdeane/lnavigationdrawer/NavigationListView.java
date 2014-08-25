@@ -74,8 +74,13 @@ public class NavigationListView extends ListView {
     }
 
     public NavigationListView setItems(String[] _items){
-        for(String item : _items)
-            mNavigationItems.add(new NavigationItem(item));
+        for(int i = 0; i < _items.length; i++){
+            try {
+                mNavigationItems.get(i).setItem(_items[i]);
+            } catch(Exception e){
+                mNavigationItems.add(new NavigationItem(_items[i]));
+            }
+        }
 
         if(mNavigationAdapter != null)
             mNavigationAdapter.notifyDataSetChanged();
@@ -90,6 +95,7 @@ public class NavigationListView extends ListView {
                 mNavigationItems.add(new NavigationItem("", _res[i]));
             }
         }
+
         if(mNavigationAdapter != null)
             mNavigationAdapter.notifyDataSetChanged();
         return this;
@@ -124,18 +130,6 @@ public class NavigationListView extends ListView {
             mSelectedColour = Color.parseColor(_colour);
         } catch(Exception e){
             Log.e("L Navigation Drawer", "Invalid hex code " + _colour);
-        }
-
-        if(mNavigationAdapter != null)
-            mNavigationAdapter.notifyDataSetChanged();
-        return this;
-    }
-
-    public NavigationListView setSelectedColor(int _colour){
-        try{
-            mSelectedColour = mContext.getResources().getColor(_colour);
-        } catch(Exception e){
-            Log.e("L Navigation Drawer", "Invalid color resource " + _colour);
         }
 
         if(mNavigationAdapter != null)
