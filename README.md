@@ -64,12 +64,13 @@ navigationListView.setSelectedItem(int position); // Sets the current selected i
 ```
 
 To handle click events simply call:
+```java
 navigationListView.setNavigationItemClickListener(new NavigationItemClickListener(){
     @Override
     public void onNavigationItemSelected(String item, ArrayList<NavigationItem> items, int position){
         // Do your stuff when an item is selected, do not worry about changing the colour or anything as it is handled for you.
     }
 });
-
+```
 
 I will try and bring more features to this library but for now it should be fine, you can use this in your app for free, enjoy!
