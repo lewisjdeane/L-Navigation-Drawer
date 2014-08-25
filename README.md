@@ -7,7 +7,7 @@ Library allowing you to easily replicate the new style of navigation drawer from
 
 ##Set up (Android Studio)
 
-Download the aar here: https://www.dropbox.com/s/uqey0k7m3g45ky4/.aar
+Download the aar here: https://www.dropbox.com/s/x6rnd4z6ek4fijr/lnavigationdrawer.aar?dl=0
 
 You can rename the aar and then place it in the libs directory of your project.
 
