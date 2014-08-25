@@ -41,6 +41,8 @@ In your java file you can now say
 NavigationListView navigationListView = (NavigationListView) findViewById(R.id.ID_OF_XML_LIST);
 ```
 
+Note: Please make sure the images passed in are fully opaque otherwise the same effect cannot be achieved.
+
 This list is populated with an object called NavigationItem which has 3 properties, title, image and whether it's selected or not.
 It has 3 constructors as follows and each item is unselected by default:
 ```java
@@ -60,7 +62,6 @@ To populate your list you can simply call a variety of methods:
 Now we have a populated list we can use other methods such as:
 ```java
 navigationListView.setSelectedColor(String hex); // Set hex colour as selected colour
-navigationListView.setSelectedColor(int colorRes); // Set colour from resources as selected colour.
 navigationListView.setSelectedItem(int position); // Sets the current selected item to one specified in parameter.
 ```
 
