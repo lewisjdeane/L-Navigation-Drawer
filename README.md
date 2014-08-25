@@ -31,7 +31,7 @@ repositories{
 
 To use this library, use the tag
 ```java
-<uk.me.lewisdeane.lnavigationdrawer.NavigationListView //All normal attributes here />
+<uk.me.lewisdeane.lnavigationdrawer.NavigationListView /* All normal attributes here */ />
 ```
 
 In your java file you can now say
