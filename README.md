@@ -2,6 +2,7 @@
 * * *
 
 Library allowing you to easily replicate the new style of navigation drawer from Android L. This library consists a custom listview that you place in your navigation drawer and will handle the work for you.
+!["Screenshot 1"](https://github.com/lewisjdeane/L-Navigation-Drawer/raw/master/app/src/main/res/screenshots/img.png)
 
 * * *
 
